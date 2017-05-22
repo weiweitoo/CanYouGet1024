@@ -11,51 +11,48 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
-	display: block;
+    display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
 }
 ol, ul {
-	list-style: none;
+    list-style: none;
 }
 blockquote, q {
-	quotes: none;
+    quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+    content: '';
+    content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
-body
-{
-	font-family: 'VT323', monospace;
+body{
+    font-family: 'VT323', monospace;
 }
-.layer
-{
-	height: 100%!important;
-	width: 100%!important;
+.layer{
+    height: 100%!important;
+    width: 100%!important;
     opacity: 0.5!important;
     width: 100%!important;
     background: linear-gradient(black,rgb(100,100,100),black)!important;
     position: absolute!important;
 }
-.message-box
-{
+.message-box{
     width: 30%!important;
     height: 150px!important;
     position: absolute!important;
@@ -66,14 +63,14 @@ body
     box-shadow: 1px 1px 30px rgba(20,20,20,0.4)!important;
     border-radius: 20px!important;
 }
-.message-box .loss-message {
+.message-box .loss-message{
     text-align: center!important;
     font-size: 54px!important;
     margin: 4%!important;
     font-family: 'VT323', monospace!important;
 }
 .message-box .button{
-	padding: 6px 40px 6px 40px!important;
+    padding: 6px 40px 6px 40px!important;
     margin-left: 35%!important;
     background-color: #B1D58B!important;
     box-shadow: 1px 1px 10px rgba(20,20,20,0.6)!important;
@@ -86,8 +83,6 @@ body
     transition: 0.2s ease-in;
     border-radius: 30px!important;
 }
-
-.message-box .button:hover
-{
-	background-color: rgb(147,198,109)!important;
+.message-box .button:hover{
+    background-color: rgb(147,198,109)!important;
 }
