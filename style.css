@@ -46,10 +46,9 @@ body{
 }
 .layer{
     height: 100%!important;
+    opacity: 0.6!important;
     width: 100%!important;
-    opacity: 0.5!important;
-    width: 100%!important;
-    background: linear-gradient(black,rgb(100,100,100),black)!important;
+    background: rgb(0,0,0)!important;
     position: absolute!important;
 }
 .message-box{
@@ -72,17 +71,18 @@ body{
 .message-box .button{
     padding: 6px 40px 6px 40px!important;
     margin-left: 35%!important;
-    background-color: #B1D58B!important;
+    background-color: black!important;
     box-shadow: 1px 1px 10px rgba(20,20,20,0.6)!important;
-    color: black!important;
+    color: white!important;
     text-align: center!important;
     text-decoration: none!important;
-    font-size: 32px!important;
+    font-size: 28px!important;
     font-family: 'VT323', monospace!important;
-    border: none;
+    border: none!important;
+    outline: none!important;
     transition: 0.2s ease-in;
     border-radius: 30px!important;
 }
 .message-box .button:hover{
-    background-color: rgb(147,198,109)!important;
+    background-color: rgb(30,90,200)!important;
 }

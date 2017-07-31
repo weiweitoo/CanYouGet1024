@@ -19,8 +19,8 @@
 </div>
 <script type="text/javascript">
 var game = new Phaser.Game(window.screen.availWidth, window.screen.availHeight, Phaser.AUTO, '', { preload: preload, create: create, update: update });
-var CIRCLE_RADIUS = 200;//default 200
-var CIRCLE_CHANGE_RATE = 30;//The speed of circle after speed become 6, the highest the slowest, default 30
+var CIRCLE_RADIUS = 240;//default 200
+var CIRCLE_CHANGE_RATE = 35;//The speed of circle after speed become 6, the highest the slowest, default 30
 var MAXSHOWSCOREBOARD = 5;//default 5
 var COLOUR_POWER = 70;//The "colour depth" of, default 70
 var BACKGROUNDCHANGE_RATE = 3;//The rate of changing of background colour, default 4
@@ -46,10 +46,8 @@ var number_play = 0;
 var button;
 var press_effect;
 var speed_text;
-var bonus_text;
-var bonus2_text;
 var showing_message = false;
-
+var won = false;
 
 
 // Main Function
@@ -129,7 +127,6 @@ function Game_Loss(){
     InitialScoreBoard(number_play);
     UpdateScoreBoard();
     ShowLossMessageBox();
-    Bonus();
 }
 function Process(){
     //process the timer cicle
@@ -137,13 +134,13 @@ function Process(){
     {
        speed = Math.sqrt(counter) / 3 * 2;
     }
-    else if(counter <= 90)
+    else if(counter <= 100)
     {
         speed = 6;
     }
     else
     {
-        speed = (counter - 90) / CIRCLE_CHANGE_RATE + 6;
+        speed = (counter - 100) / CIRCLE_CHANGE_RATE + 6;
     }
     //write the speed down
     speed_text.text = "Speed : " + speed;
@@ -153,10 +150,13 @@ function Process(){
     {
         Game_Loss();
     }
-    //bonus_text.text = "Bonus : " + bonus; 
-    //bonus2_text = "Bonus Time : " + bonus_time;
     //PressEffect
     PressEffect();
+
+    if(score >= 1024 && won == false){
+        Bonus();
+        won = true;
+    }
 }
 
 
