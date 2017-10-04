@@ -10,9 +10,9 @@ An Javascript Web Game that challenge your finger speed and nerve transmission s
 *Phaser is an open source game framework for making desktop and mobile browser HTML5 games*
 
 ## Reminder if you want to run the game
-#### 1. If you clone or download the fileto run locally
+#### 1. If you clone or download the file to run locally
  - Run it in localhost since phaser need a localhost
-#### 2. Easy way! I promised
+#### 2. Easy way. I promised
 - Click this https://weiweitoo.github.io/CanYouGet1024/
 
 ## Game Instruction
