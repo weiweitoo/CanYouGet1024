@@ -3,7 +3,6 @@ An Javascript Web Game that challenge your finger speed and nerve transmission s
 
 ## Technology
 - HTML
-- CSS
 - Javascript
 - Phaser
 
